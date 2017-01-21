@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Maze : InteractObject 
+public class Maze : InteractObject
 {
 
 	/*
@@ -22,7 +22,7 @@ public class Maze : InteractObject
 	public float speedOfMazePiece;
 
 	// Required by InteractObject
-	override public void StartInteract()
+	override public void ResetPuzzle()
 	{
 
 	} // public void StartInteract()
@@ -41,8 +41,12 @@ public class Maze : InteractObject
 
 	override public void RunInteraction()
 	{
-
+		//instantiate maze puzzle
+		//instantiate maze runner at puzzle spawnpoint
+		//take over player canControl
+		//set player mazing to true
+		
 	} // public void RunInteraction()
 
 
-} // public class Maze : MonoBehaviour 
+} // public class Maze : MonoBehaviour

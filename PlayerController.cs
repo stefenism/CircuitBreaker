@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour 
+public class PlayerController : MonoBehaviour
 {
 
 	public float speed;
@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
 	public int playerNumber;
 	public SpriteRenderer pressa;
 
-	
-	private InteractObject interactObject;
+	[HideInInspector]
+	public InteractObject interactObject;
 	private Rigidbody2D rb;
 	private Animator anim;
 
@@ -147,6 +147,7 @@ public class PlayerController : MonoBehaviour
 
 			pressa.GetComponent<Animator>().SetBool("on", true);//enabled = true;
 
+			/*
 			interactObject = collider.gameObject.GetComponent<InteractObject>();
 
 
@@ -157,6 +158,7 @@ public class PlayerController : MonoBehaviour
 				canControl = false;
 				mashing = true;
 			} // if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
+			*/
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerStay2D(Collider2D collider)
 
@@ -172,9 +174,11 @@ public class PlayerController : MonoBehaviour
 		{
 				pressa.GetComponent<Animator>().SetBool("on", false);//pressa.enabled = false;
 
+				/*
 				interactObject.mashValue = 0;
 				interactObject = null;
 				//canControl = true;
+				*/
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerExit2D(Collider2D collider)
-} // public class PlayerController : MonoBehaviour 
+} // public class PlayerController : MonoBehaviour

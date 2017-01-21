@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonMash : InteractObject 
+public class ButtonMash : InteractObject
 {
 	/*
 	21 Jan 2017
@@ -23,9 +23,10 @@ public class ButtonMash : InteractObject
 	[Header("Button Mash Instance Variables")]
 	public int 		numberOfMashesNeeded;
 	public float	timeInBetweenMashes;
+	private float mashValue;
 
 	// Required by InteractObject
-	override public void StartInteract()
+	override public void ResetPuzzle()
 	{
 
 	} // public void StartInteract()
@@ -44,7 +45,7 @@ public class ButtonMash : InteractObject
 
 	override public void RunInteraction()
 	{
-
+		StartMash();
 	} // public void RunInteraction()
 
 	private void StartMash()
@@ -63,4 +64,4 @@ public class ButtonMash : InteractObject
 			player.mashing = false;
 		} // if
 	} // StartMash
-} //public class ButtonMash : InteractObject 
+} //public class ButtonMash : InteractObject

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class InteractObject : MonoBehaviour 
+public abstract class InteractObject : MonoBehaviour
 {
 
 	/*
@@ -18,36 +18,38 @@ public abstract class InteractObject : MonoBehaviour
 		public bool enabled;
 			whether or not you can interact.
 
-		
+
 	*/
 
 	[Header("Base Interact Object State")]
-	public float 	mashValue;
-	public bool 	mazeFinish;
 	public float 	chargeAmount;
 	[HideInInspector] public bool enabled;
 
 	[HideInInspector] public PlayerController player;
 
 	// Required Functions
-	public abstract void StartInteract();
+	public abstract void ResetPuzzle();
 	public abstract void Completed();
 	public abstract void Failed();
 	public abstract void RunInteraction();
 
 	// Use this for initialization
 	void Start () {
-		mazeFinish = false;
 	} // Start
 
+	public void StartInteract()
+	{
+		enabled = true;
+	}
 	// Update is called once per frame
 	void Update () {
 		if(enabled)
 		{
+			enabled = false;
 			RunInteraction();
 		} // if
 	} // Update
-	
+
 	void StartMaze()
 	{
 		//spawn maze
