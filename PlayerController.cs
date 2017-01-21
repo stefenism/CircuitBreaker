@@ -20,11 +20,11 @@ public class PlayerController : MonoBehaviour
 	private float move;
 	private float climb;
 	private bool climbing;
-	[HideInInspector]
-	public bool mashing;
+
 
 	public int playerNumber;
 	public SpriteRenderer pressa;
+	public GameObject mazeSpawnPoint;
 
 	[HideInInspector]
 	public InteractObject interactObject;
@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
 
 		canControl = true;
 		climbing = false;
-		mashing = false;
 	} // Awake
 
 	// Update is called once per frame
@@ -57,10 +56,6 @@ public class PlayerController : MonoBehaviour
 
 		GroundCheck();
 
-		if(mashing)
-		{
-			Mash();
-		}
 
 		//anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     //anim.SetFloat("vspeed", rb.velocity.y);
@@ -100,6 +95,7 @@ public class PlayerController : MonoBehaviour
 		} // if
 	} // void Climb()
 
+	/*
 	void Mash()
 	{
 		if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
@@ -107,6 +103,7 @@ public class PlayerController : MonoBehaviour
 			// interactObject.mashValue += .1f;
 		} // if
 	} // void Mash()
+	*/
 
 	void GroundCheck()
  	 {
@@ -154,6 +151,7 @@ public class PlayerController : MonoBehaviour
 			pressa.GetComponent<Animator>().SetBool("on", true);//enabled = true;
 
 			// Catch controls
+			/*
 			if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
 	   		{
 				interactObject.enabled = true;
@@ -161,6 +159,7 @@ public class PlayerController : MonoBehaviour
 				canControl = false;
 				mashing = true;
 			} // if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
+			*/
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerStay2D(Collider2D collider)
 

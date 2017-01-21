@@ -31,7 +31,7 @@ public class InteractController : MonoBehaviour {
 	void Update () {
 
 	}
-	
+
 	void SetPlayerInteractTarget (InteractObject input)
 	{
 		player.InteractObject = input;
@@ -45,8 +45,15 @@ public class InteractController : MonoBehaviour {
 			//assign collided gameobject to interact object
 			//press switch I.E. set bool to switch being pressed
 
-		player.interactObject = collider.gameObject.GetComponent(typeof(InteractObject)) as InteractObject;
+			player.interactObject = collider.gameObject.GetComponent(typeof(InteractObject)) as InteractObject;
 
+			//enable the minigame controls, disable the player controls
+			if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+			{
+				player.canControl = false;
+				player.InteractObject.player = GetComponent<PlayerController>();
+				player.InteractObject.StartInteract();
+			}//if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerStay2D(Collider2D collider)
 

@@ -23,18 +23,20 @@ public class ButtonMash : InteractObject
 	[Header("Button Mash Instance Variables")]
 	public int 		numberOfMashesNeeded;
 	public float	timeInBetweenMashes;
-	private float mashValue;
+	public float mashValue;
 
 	// Required by InteractObject
 	override public void ResetPuzzle()
 	{
-
+		mashValue = 0f;
 	} // public void StartInteract()
 
 	// Required by InteractObject
 	override public void Completed()
 	{
-
+		enabled = false;
+		player.canControl = true;
+		StartCoroutine(ResetWait(3f));
 	} // public void Completed()
 
 	// Required by InteractObject
@@ -59,9 +61,20 @@ public class ButtonMash : InteractObject
 
 		if(mashValue >= 1)
 		{
-			enabled = false;
-			player.canControl = true;
-			player.mashing = false;
+			Completed();
+		} // if
+
+		//player INput
+		if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+		{
+			mashValue += .1f;
 		} // if
 	} // StartMash
+
+	private IEnumerator ResetWait(float seconds)
+	{
+		yield return new WaitForSeconds(seconds);
+
+		ResetPuzzle();
+	}
 } //public class ButtonMash : InteractObject

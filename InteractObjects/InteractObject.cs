@@ -45,18 +45,10 @@ public abstract class InteractObject : MonoBehaviour
 	void Update () {
 		if(enabled)
 		{
-			enabled = false;
+			//enabled = false;
 			RunInteraction();
 		} // if
 	} // Update
-
-	void StartMaze()
-	{
-		//spawn maze
-		//if maze finished
-		//canControl = true
-		//mazing = false
-	} // StartMaze
 
 	public bool Enabled
 	{
