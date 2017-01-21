@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+	/*
+
+	Catches controls.
+	Moves Player.
+	Sets animations.
+	*/
 
 	public float speed;
 	public float climbSpeed;
@@ -98,7 +104,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
 		{
-			interactObject.mashValue += .1f;
+			// interactObject.mashValue += .1f;
 		} // if
 	} // void Mash()
 
@@ -147,10 +153,7 @@ public class PlayerController : MonoBehaviour
 
 			pressa.GetComponent<Animator>().SetBool("on", true);//enabled = true;
 
-			/*
-			interactObject = collider.gameObject.GetComponent<InteractObject>();
-
-
+			// Catch controls
 			if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
 	   		{
 				interactObject.enabled = true;
@@ -158,7 +161,6 @@ public class PlayerController : MonoBehaviour
 				canControl = false;
 				mashing = true;
 			} // if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
-			*/
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerStay2D(Collider2D collider)
 
@@ -181,4 +183,16 @@ public class PlayerController : MonoBehaviour
 				*/
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerExit2D(Collider2D collider)
+
+	public InteractObject InteractObject
+	{
+		get
+		{
+			return interactObject;
+		}
+		set
+		{
+			interactObject = value;
+		}
+	} // public InteractObject interactObject
 } // public class PlayerController : MonoBehaviour
