@@ -61,6 +61,10 @@ public class InteractObject : MonoBehaviour
 		{
 			return enabled;
 		} // get
+		set
+		{
+			enabled = value;
+		}
 	} // public bool Enabled
 
 	public string ObjectType
