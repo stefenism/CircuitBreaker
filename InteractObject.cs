@@ -2,7 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractObject : MonoBehaviour {
+public class InteractObject : MonoBehaviour 
+{
+
+	/*
+	20 Jan 2017
+	Last Modified: 21 Jan 2017
+	Stefan
+
+	Interacts with objects.
+
+	Instance Variables
+
+		public bool enabled;
+			whether or not you can interact.
+
+		
+	*/
 
 	[HideInInspector]
 	public bool enabled;
@@ -16,7 +32,7 @@ public class InteractObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		mazeFinish = false;
-	}
+	} // Start
 
 	// Update is called once per frame
 	void Update () {
@@ -25,38 +41,50 @@ public class InteractObject : MonoBehaviour {
 		{
 			if(objectType == "mash")
 			{
-				startMash();
-			}
+				StartMash();
+			} // if
 
 			if(objectType == "maze")
 			{
-				startMaze();
-			}
-		}
-	}
+				StartMaze();
+			} // if
+		} // if
+	} // Update
 
-	void startMash()
+	void StartMash()
 	{
 		mashValue -= 0.05f;
 
 		if(mashValue < 0)
 		{
 			mashValue = 0;
-		}
+		} // if
 
 		if(mashValue >= 1)
 		{
 			enabled = false;
 			player.canControl = true;
 			player.mashing = false;
-		}
-	}
+		} // if
+	} // StartMash
 
-	void startMaze()
+	void StartMaze()
 	{
 		//spawn maze
 		//if maze finished
 		//canControl = true
 		//mazing = false
-	}
-}
+	} // StartMaze
+
+	public bool Enabled
+	{
+		get
+		{
+			return enabled;
+		} // get
+		set
+		{
+			enabled = value;
+		} // set
+	} // public bool Enabled
+} // InteractObject
