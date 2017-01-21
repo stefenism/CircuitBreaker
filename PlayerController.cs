@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
-
-	private Rigidbody2D rb;
-	private Animator anim;
+public class PlayerController : MonoBehaviour 
+{
 
 	public float speed;
 	public float climbSpeed;
@@ -21,7 +19,11 @@ public class PlayerController : MonoBehaviour {
 
 	public int playerNumber;
 	public SpriteRenderer pressa;
+
+	
 	private InteractObject interactObject;
+	private Rigidbody2D rb;
+	private Animator anim;
 
 	// Use this for initialization
 	void Awake () {
@@ -31,9 +33,7 @@ public class PlayerController : MonoBehaviour {
 		canControl = true;
 		climbing = false;
 		mashing = false;
-
-
-	}
+	} // Awake
 
 	// Update is called once per frame
 	void Update () {
@@ -59,31 +59,29 @@ public class PlayerController : MonoBehaviour {
 		//anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     //anim.SetFloat("vspeed", rb.velocity.y);
 
-	}
+	} // Update()
 
 	void Run()
 	{
-
-
-	    move = (Input.GetAxis("Player" + playerNumber + "Horizontal") + Input.GetAxis("Player" + playerNumber + "Horizontal2"));
+	    move		= (Input.GetAxis("Player" + playerNumber + "Horizontal") + Input.GetAxis("Player" + playerNumber + "Horizontal2"));
 	    rb.velocity = new Vector2(speed * move, rb.velocity.y);
 
-			if(Mathf.Abs(rb.velocity.x) > speed)
-			{
-				rb.velocity = new Vector2((speed ), rb.velocity.y);
+		if(Mathf.Abs(rb.velocity.x) > speed)
+		{
+			rb.velocity = new Vector2((speed ), rb.velocity.y);
 
-			}
+		} // if
 
 	    if(move > 0 && !facingRight)
-			{
-				Flip();
-			}
+		{
+			Flip();
+		} // if
 
-			else if(move < 0 && facingRight)
-			{
-				Flip();
-			}
-	}
+		else if(move < 0 && facingRight)
+		{
+			Flip();
+		} //else if
+	} // Run()
 
 	void Climb()
 	{
@@ -93,30 +91,29 @@ public class PlayerController : MonoBehaviour {
 		if(Mathf.Abs(rb.velocity.y) > climbSpeed)
 		{
 			rb.velocity = new Vector2((speed), climbSpeed);
-		}
-	}
+		} // if
+	} // void Climb()
 
 	void Mash()
 	{
 		if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
 		{
 			interactObject.mashValue += .1f;
-		}
-	}
+		} // if
+	} // void Mash()
 
 	void GroundCheck()
-  {
+ 	 {
 		/*
-    if(grounded)
-    {
-      canJump = true;
-      jumping = false;
-      airJump = true;
-      airJumpCount = 0;
-    }
+		if(grounded)
+		{
+			canJump = true;
+			jumping = false;
+			airJump = true;
+			airJumpCount = 0;
+		}
 		*/
-
-  }
+  	} // void GroundCheck()
 
 	void Flip()
 	{
@@ -125,7 +122,7 @@ public class PlayerController : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
-	}
+	} //  void Flip()
 
 	void OnTriggerStay2D(Collider2D collider)
 	{
@@ -136,11 +133,11 @@ public class PlayerController : MonoBehaviour {
 			{
 				rb.gravityScale = 0;
 
-			}
+			} // if(climb > 0)
 			//and pressing "up or down"
 			//gravity = 0
 			//velocity = up or down * climbspeed
-		}
+		} // if(collider.gameObject.tag == "ladder")
 
 		if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 		{
@@ -154,14 +151,14 @@ public class PlayerController : MonoBehaviour {
 
 
 			if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
-	    {
+	   		{
 				interactObject.enabled = true;
 				interactObject.player = this.gameObject.GetComponent<PlayerController>();
 				canControl = false;
 				mashing = true;
-			}
-		}
-	}
+			} // if(Input.GetButtonDown("Player" + playerNumber+ "Action") || Input.GetButton("Player" + playerNumber + "Action2"))
+		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
+	} // void OnTriggerStay2D(Collider2D collider)
 
 	void OnTriggerExit2D(Collider2D collider)
 	{
@@ -169,7 +166,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			rb.gravityScale = 5;
 			climbing = false;
-		}
+		} // if(collider.gameObject.tag == "ladder")
 
 		if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 		{
@@ -178,8 +175,6 @@ public class PlayerController : MonoBehaviour {
 				interactObject.mashValue = 0;
 				interactObject = null;
 				//canControl = true;
-		}
-	}
-
-
-}
+		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
+	} // void OnTriggerExit2D(Collider2D collider)
+} // public class PlayerController : MonoBehaviour 
