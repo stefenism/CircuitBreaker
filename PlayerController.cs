@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 
 	public int playerNumber;
 	public SpriteRenderer pressa;
-	public InteractObject interactObject;
+	private InteractObject interactObject;
 
 	// Use this for initialization
 	void Awake () {
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 
 		canControl = true;
 		climbing = false;
-		mashing = true;
+		mashing = false;
 
 
 	}
