@@ -68,7 +68,7 @@ public class Maze : InteractObject
 		//instantiate maze runner at puzzle spawnpoint
 		//take over player canControl
 		//set player mazing to true
-		clone = Instantiate(mazes[0], player.mazeSpawnPoint.transform.position, Quaternion.identity) as GameObject;
+		clone = Instantiate(mazes[Random.Range(0, mazes.Length)], player.mazeSpawnPoint.transform.position, Quaternion.identity) as GameObject;
 		SpawnMazeRunner(clone);
 		player.canControl = false;
 		runner.GetComponent<RunnerController>().canControl = true;
@@ -83,7 +83,7 @@ public class Maze : InteractObject
 	{
 
 
-		runner = Instantiate(mazeRunner, spawnpoint.transform.GetChild(2).transform.position, Quaternion.identity) as GameObject;
+		runner = Instantiate(mazeRunner, spawnpoint.transform.GetChild(1).transform.position, Quaternion.identity) as GameObject;
 
 	}
 
