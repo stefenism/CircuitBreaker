@@ -31,10 +31,12 @@ public class SpawnObject : MonoBehaviour {
 	public GameObject clone;
 	public GameObject type;
 	public PlayerController player;
+	public GameObject[] spawnPoint;
 
 	// Use this for initialization
 	void Start () {
-
+		spawnPoint[0] = GameObject.Find("SpawnPoint1");
+		spawnPoint[1] = GameObject.Find("SpawnPoint2");
 	}
 
 	// Update is called once per frame
@@ -46,8 +48,12 @@ public class SpawnObject : MonoBehaviour {
 	{
 		InteractObject interactObject;
 
-		clone = Instantiate(type, player.mazeSpawnPoint.transform.position, Quaternion.identity) as GameObject;
+		clone = Instantiate(type, spawnPoint[player.playerNumber - 1].transform.position, Quaternion.identity) as GameObject;
 
+		if(clone.tag == "maze")
+		{
+			clone.transform.position = new Vector3(0f,0f,0f);
+		}
 
 		interactObject = clone.GetComponent(typeof(InteractObject)) as InteractObject;
 

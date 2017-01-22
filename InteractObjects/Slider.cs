@@ -53,6 +53,9 @@ public class Slider : InteractObject {
 	override public void Failed()
 	{
 		Debug.Log("failed");
+		Destroy(this.gameObject);
+		player.canControl = true;
+		player.smashing = false;
 	}
 
 	//Required by InteractObject
@@ -77,6 +80,11 @@ public class Slider : InteractObject {
 			{
 				Completed();
 			} // if
+		}
+
+		if(Input.GetButtonDown("Player" + player.playerNumber+ "Cancel") || Input.GetButton("Player" + player.playerNumber + "Cancel2"))
+		{
+			Failed();
 		}
 	}
 
