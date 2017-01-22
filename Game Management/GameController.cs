@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
 	[Header("Music")]
 	public AudioClip backgroundMusic;
 	public AudioClip gameOverMusic;
+	[Header("Game Over")]
+	public GameObject gameOverScreen;
 
 	//Private Instance Variables
 	private bool isGameFinished = false;
@@ -72,6 +74,7 @@ public class GameController : MonoBehaviour
 
 			// Do things saying that the game is over!
 			Debug.Log("[GameController] CoilOverCharged(): Coil of player " + numberOfPlayerThatDied + " has died! Game Over!");
+			
 		} // if
 	}// public void CoilOverCharged ()
 
