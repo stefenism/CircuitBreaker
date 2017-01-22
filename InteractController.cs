@@ -28,10 +28,10 @@ public class InteractController : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 
-	} // void Update () 
+	} // void Update ()
 
 	void SetPlayerInteractTarget (InteractObject input)
 	{
