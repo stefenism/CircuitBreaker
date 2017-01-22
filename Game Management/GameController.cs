@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
 	public TeslaCoil playerTwoCoil;
 	[Header("Music")]
 	public AudioClip backgroundMusic;
+	public AudioClip gameOverMusic;
 
 	//Private Instance Variables
 	private bool isGameFinished = false;
@@ -77,8 +78,24 @@ public class GameController : MonoBehaviour
 	private void ManageMusic()
 	{
 		// Do background music if the game is running.
-		if ()
+		if (isGameFinished == false)
+		{	
+			// If the background music isn't already playing, set it in.
+			if (audio.clip != backgroundMusic)
+			{
+				SetAudioTrackAndPlay(audio, backgroundMusic);
+			} // if
+		} // if
+
+		// If the game is finished, play the end music.
 	} // private void ManageMusic()
+
+	private void SetAudioTrackAndPlay(AudioSource audioSource, AudioClip clipInput)
+	{
+		audioSource.Stop();
+		audioSource.clip = clipInput;
+		audioSource.Play();
+	} // private void SetAudioTrackAndPlay(AudioSource audioSource, AudioClip clip)
 
 	public bool IsGameFinished
 	{
