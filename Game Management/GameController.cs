@@ -131,10 +131,10 @@ public class GameController : MonoBehaviour
 
 		if (numberOfPlayerWhoCompleted == 1)
 		{
-			playerOneCoil.AddCharge(amountOfCharge);
+			playerTwoCoil.AddCharge(amountOfCharge);
 		} else
 		{
-			playerTwoCoil.AddCharge(amountOfCharge);
+			playerOneCoil.AddCharge(amountOfCharge);
 		}
 	} // public void GameCompleted ()
 
