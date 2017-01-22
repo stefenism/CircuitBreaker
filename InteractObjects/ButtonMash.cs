@@ -40,6 +40,9 @@ public class ButtonMash : InteractObject
 		player.smashing = false;
 		StartCoroutine(ResetWait(3f));
 		Destroy(this.gameObject);
+
+		//Tell the GameController we finished a game.
+		GameController.Instance.GameCompleted(chargeAmount, player);
 	} // public void Completed()
 
 	// Required by InteractObject

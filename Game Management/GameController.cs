@@ -19,6 +19,9 @@ public class GameController : MonoBehaviour
 
 	[Header("Gameplay Variables")]
 	public float maxCharge;
+	[Header("Players")]
+	public PlayerController playerOne;
+	public PlayerController playerTwo;
 	[Header("Tesla Coils")]
 	public TeslaCoil playerOneCoil;
 	public TeslaCoil playerTwoCoil;
@@ -32,8 +35,27 @@ public class GameController : MonoBehaviour
 	private bool isGameFinished = false;
 	private bool gameIsRunning;
 
+	//Singleton Variables
+	private static GameController m_Instance;
+
+	public static GameController Instance // Get this to access World
+	{
+		get
+		{
+			return m_Instance;
+		} // get
+	} // public static World Instance
+
 	// References
 	private AudioSource audio;
+
+	// This is protected to allow for a singleton.
+	protected GameController () {}
+
+	void Awake ()
+	{
+		m_Instance = this;
+	}
 
 	// Use this for initialization
 	void Start ()
@@ -92,6 +114,29 @@ public class GameController : MonoBehaviour
 
 		// If the game is finished, play the end music.
 	} // private void ManageMusic()
+
+	public void GameCompleted (float amountOfCharge, PlayerController playerWhoCompletedIt)
+	{
+		int numberOfPlayerWhoCompleted;
+
+		// Figure out which player completed the game.
+		if (Object.ReferenceEquals(playerWhoCompletedIt, playerOne))
+		{
+			numberOfPlayerWhoCompleted = 1;
+		}  // if
+		else
+		{
+			numberOfPlayerWhoCompleted = 2;
+		} // else
+
+		if (numberOfPlayerWhoCompleted == 1)
+		{
+			playerOneCoil.AddCharge(amountOfCharge);
+		} else
+		{
+			playerTwoCoil.AddCharge(amountOfCharge);
+		}
+	} // public void GameCompleted ()
 
 	private void SetAudioTrackAndPlay(AudioSource audioSource, AudioClip clipInput)
 	{
