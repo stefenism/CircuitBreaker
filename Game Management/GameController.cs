@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour
 	public AudioClip backgroundMusic;
 	public AudioClip gameOverMusic;
 	[Header("Game Over")]
-	public GameObject gameOverScreen;
+	public GameOverController gameOverScreen;
 
 	//Private Instance Variables
 	private bool isGameFinished = false;
@@ -94,9 +94,16 @@ public class GameController : MonoBehaviour
 				numberOfPlayerThatDied = 2;
 			} // else
 
+			gameOverScreen.StartGameOver(numberOfPlayerThatDied);
+
 			// Do things saying that the game is over!
 			Debug.Log("[GameController] CoilOverCharged(): Coil of player " + numberOfPlayerThatDied + " has died! Game Over!");
 			
+			//Disable the players.
+			playerOne.CanControl = false;
+			playerTwo.CanControl = false;
+
+			// Spawn the Game Over Screen.
 		} // if
 	}// public void CoilOverCharged ()
 
