@@ -24,6 +24,7 @@ public class Slider : InteractObject {
 	public float speed;
 	public SliderBall ball1;
 	public SliderBall ball2;
+	public GameObject crossBar;
 
 	private GameObject clone;
 	public GameObject slider;
@@ -40,6 +41,9 @@ public class Slider : InteractObject {
 	override public void Completed()
 	{
 		Debug.Log("succeeded");
+		Destroy(this.gameObject);
+		player.canControl = true;
+		player.smashing = false;
 	}
 
 	//Required by InteractObject
@@ -52,40 +56,45 @@ public class Slider : InteractObject {
 	override public void RunInteraction()
 	{
 		enabled = false;
-		this.gameObject.tag = "Untagged";
+		//this.gameObject.tag = "Untagged";
 		StartSlider();
 	}
+
+	void Update()
+	{
+
+		if(enabled)
+		{
+			RunInteraction();
+		}
+		if(ball1.collided && ball2.collided)
+		{
+			//Debug.Log("collided");
+			if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+			{
+				Completed();
+			} // if
+		}
+	}
+
 
 	private void StartSlider()
 	{
 
-		clone = Instantiate(slider, player.mazeSpawnPoint.transform.position, Quaternion.identity) as GameObject;
+		//clone = Instantiate(slider, player.mazeSpawnPoint.transform.position, Quaternion.identity) as GameObject;
 		player.canControl = false;
 
 		/*
 		ball1.rb.velocity = new Vector2(0f, -speed + Random.Range(0f, 3f));
 		ball2.rb.velocity = new Vector2(0f, speed + Random.Range(-3f, -1f));
 		*/
-		ball1.speed = -speed + Random.Range(0f, 2f);
+		ball1.speed = -speed + Random.Range(.1f, 2f);
 		ball1.go = true;
 
-		ball2.speed = speed + Random.Range(-2f, -1f);
+		ball2.speed = speed + Random.Range(-1f, -.25f);
 		ball2.go = true;
 
-		if(ball1.collided && ball2.collided)
-		{
-			if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
-			{
-				Completed();
-			} // if
-		}
+		crossBar.transform.position = new Vector2 (crossBar.transform.position.x, Random.Range(crossBar.transform.position.y -.5f, crossBar.transform.position.y +.5f));
 
-		else
-		{
-			if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
-			{
-				//Failed();
-			} // if
-		}
 	}
 }

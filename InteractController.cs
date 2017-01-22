@@ -28,10 +28,10 @@ public class InteractController : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 
-	} // void Update () 
+	} // void Update ()
 
 	void SetPlayerInteractTarget (InteractObject input)
 	{
@@ -46,16 +46,24 @@ public class InteractController : MonoBehaviour {
 			//assign collided gameobject to interact object
 			//press switch I.E. set bool to switch being pressed
 
-			player.interactObject = collider.gameObject.GetComponent(typeof(InteractObject)) as InteractObject;
-
+			player.interactObject = collider.gameObject.GetComponent<SpawnObject>().miniGames[Random.Range(0, collider.gameObject.GetComponent<SpawnObject>().miniGames.Length)].GetComponent(typeof(InteractObject)) as InteractObject;
+			//Debug.Log("InteractObject: " + player.interactObject);
 			//enable the minigame controls, disable the player controls
-			if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+
+			if(player.canControl)
 			{
-				player.canControl = false;
-				player.smashing = true;
-				player.InteractObject.player = GetComponent<PlayerController>();
-				player.InteractObject.StartInteract();
-			}//if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+				if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+				{
+					player.canControl = false;
+					player.smashing = true;
+					collider.gameObject.GetComponent<SpawnObject>().player = this.gameObject.GetComponent<PlayerController>();
+					collider.gameObject.GetComponent<SpawnObject>().type = player.interactObject.gameObject;
+					collider.gameObject.GetComponent<SpawnObject>().Spawn();
+					//player.InteractObject.player = GetComponent<PlayerController>();
+					//player.InteractObject.StartInteract();
+				}//if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+			}
+
 		} // if(collider.gameObject.tag == "button" || collider.gameObject.tag == "mash")
 	} // void OnTriggerStay2D(Collider2D collider)
 

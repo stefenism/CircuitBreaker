@@ -24,6 +24,7 @@ public class ButtonMash : InteractObject
 	public int 		numberOfMashesNeeded;
 	public float	timeInBetweenMashes;
 	public float mashValue;
+	public GameObject fillBar;
 
 	// Required by InteractObject
 	override public void ResetPuzzle()
@@ -38,6 +39,7 @@ public class ButtonMash : InteractObject
 		player.canControl = true;
 		player.smashing = false;
 		StartCoroutine(ResetWait(3f));
+		Destroy(this.gameObject);
 	} // public void Completed()
 
 	// Required by InteractObject
@@ -48,12 +50,17 @@ public class ButtonMash : InteractObject
 
 	override public void RunInteraction()
 	{
+		enabled = false;
 		StartMash();
 	} // public void RunInteraction()
 
+	void Update()
+	{
+		StartMash();
+	}
 	private void StartMash()
 	{
-		mashValue -= 0.05f;
+		mashValue -= 0.005f;
 
 		if(mashValue < 0)
 		{
@@ -66,10 +73,12 @@ public class ButtonMash : InteractObject
 		} // if
 
 		//player INput
-		if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
+		if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButtonDown("Player" + player.playerNumber + "Action2"))
 		{
 			mashValue += .1f;
+
 		} // if
+		fillBar.transform.localScale = new Vector3(1f, mashValue, 1f);
 	} // StartMash
 
 	private IEnumerator ResetWait(float seconds)
