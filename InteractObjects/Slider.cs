@@ -44,6 +44,9 @@ public class Slider : InteractObject {
 		Destroy(this.gameObject);
 		player.canControl = true;
 		player.smashing = false;
+
+		//Tell the GameController we finished a game.
+		GameController.Instance.GameCompleted(chargeAmount, player);
 	}
 
 	//Required by InteractObject

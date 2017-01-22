@@ -46,6 +46,9 @@ public class Maze : InteractObject
 		this.gameObject.tag = "mash";
 		player.canControl = true;
 		player.smashing = false;
+
+		//Tell the GameController we finished a game.
+		GameController.Instance.GameCompleted(chargeAmount, player);
 	} // public void Completed()
 
 	// Required by InteractObject
