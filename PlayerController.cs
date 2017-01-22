@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 	private float move;
 	private float climb;
 	private bool climbing;
+	private bool canClimb;
+	public bool smashing;
 
 
 	public int playerNumber;
@@ -38,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
 		canControl = true;
 		climbing = false;
+		canClimb = false;
+		facingRight = true;
 	} // Awake
 
 	// Update is called once per frame
@@ -57,8 +61,10 @@ public class PlayerController : MonoBehaviour
 		GroundCheck();
 
 
-		//anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
-    //anim.SetFloat("vspeed", rb.velocity.y);
+		anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
+		anim.SetBool("climbing", (climbing && canClimb));
+		anim.SetBool("smashing", smashing);
+    anim.SetFloat("vspeed", Mathf.Abs(rb.velocity.y));
 
 	} // Update()
 
@@ -131,12 +137,22 @@ public class PlayerController : MonoBehaviour
 	{
 		if(collider.gameObject.tag == "ladder")
 		{
+			if(Mathf.Abs(rb.velocity.y) > 0f)
+			{
+				canClimb = true;
+			}
+			else
+			{
+				canClimb = false;
+			}
 			climbing = true;
+			rb.gravityScale = 0;
+			/*
 			if(climb > 0)
 			{
 				rb.gravityScale = 0;
 
-			} // if(climb > 0)
+			} // if(climb > 0)*/
 			//and pressing "up or down"
 			//gravity = 0
 			//velocity = up or down * climbspeed

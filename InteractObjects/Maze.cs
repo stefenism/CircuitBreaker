@@ -44,6 +44,7 @@ public class Maze : InteractObject
 		Destroy(runner);
 		this.gameObject.tag = "mash";
 		player.canControl = true;
+		player.smashing = false;
 	} // public void Completed()
 
 	// Required by InteractObject

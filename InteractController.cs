@@ -51,6 +51,7 @@ public class InteractController : MonoBehaviour {
 			if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))
 			{
 				player.canControl = false;
+				player.smashing = true;
 				player.InteractObject.player = GetComponent<PlayerController>();
 				player.InteractObject.StartInteract();
 			}//if(Input.GetButtonDown("Player" + player.playerNumber+ "Action") || Input.GetButton("Player" + player.playerNumber + "Action2"))

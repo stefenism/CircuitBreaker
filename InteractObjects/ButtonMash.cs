@@ -36,6 +36,7 @@ public class ButtonMash : InteractObject
 	{
 		enabled = false;
 		player.canControl = true;
+		player.smashing = false;
 		StartCoroutine(ResetWait(3f));
 	} // public void Completed()
 
