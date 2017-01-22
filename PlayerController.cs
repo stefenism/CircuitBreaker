@@ -210,4 +210,16 @@ public class PlayerController : MonoBehaviour
 			interactObject = value;
 		}
 	} // public InteractObject interactObject
+
+	public bool CanControl
+	{
+		get
+		{
+			return canControl;
+		}
+		set
+		{
+			canControl = value;
+		}
+	} // public bool canControl
 } // public class PlayerController : MonoBehaviour
