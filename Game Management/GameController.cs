@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class GameController : MonoBehaviour 
 {
 	/*
@@ -21,9 +22,15 @@ public class GameController : MonoBehaviour
 	[Header("Tesla Coils")]
 	public TeslaCoil playerOneCoil;
 	public TeslaCoil playerTwoCoil;
+	[Header("Music")]
+	public AudioClip backgroundMusic;
 
 	//Private Instance Variables
 	private bool isGameFinished = false;
+	private bool gameIsRunning;
+
+	// References
+	private AudioSource audio;
 
 	// Use this for initialization
 	void Start () 
@@ -31,13 +38,15 @@ public class GameController : MonoBehaviour
 		// Set up each of the Tesla Coils
 		playerOneCoil.SetUpCoil(maxCharge, this);
 		playerTwoCoil.SetUpCoil(maxCharge, this);
+
+		// Set up References
+		audio = GetComponent<AudioSource>();
 	} // void Start () 
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		
-
+		ManageMusic();
 	} // Update();
 
 	// A Coil calls this once it's overloaded (dead)
@@ -64,6 +73,12 @@ public class GameController : MonoBehaviour
 			Debug.Log("[GameController] CoilOverCharged(): Coil of player " + numberOfPlayerThatDied + " has died! Game Over!");
 		} // if
 	}// public void CoilOverCharged ()
+
+	private void ManageMusic()
+	{
+		// Do background music if the game is running.
+		if ()
+	} // private void ManageMusic()
 
 	public bool IsGameFinished
 	{

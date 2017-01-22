@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class TeslaCoil : MonoBehaviour 
 {
 	/*
@@ -24,14 +25,22 @@ public class TeslaCoil : MonoBehaviour
 	private bool 	isDead			= false;
 	private bool 	coilHasStarted = false;
 	private float 	maxCharge; // Set by GameController in SetUpCoil()
+
+	// references
+	private Animator		anim;
+	private GameController 	gameController; // A reference to the GameController.
 	
-	private GameController gameController; // A reference to the GameController.
-	
+	void Start ()
+	{
+		anim = GetComponent<Animator>();
+	} // void Start ()
+
 	void Update ()
 	{
 		if (coilHasStarted && !isDead)
 		{
 			CheckIfDead();
+			ManageAnimations();
 		} // if
 	} // void Update ()
 
@@ -41,6 +50,7 @@ public class TeslaCoil : MonoBehaviour
 		gameController 	= gameControllerInput;
 
 		coilHasStarted 	= true;
+		anim.SetBool("IsDead", false);
 	} // public void StartCoil()
 
 	public void AddCharge (float amount)
@@ -57,6 +67,51 @@ public class TeslaCoil : MonoBehaviour
 
 			// Tell this coil that it is dead.
 			isDead = true;
+			anim.SetBool("IsDead", true);
 		} // if
 	} // private void CheckIfDead()
+
+	private void ManageAnimations()
+	{
+		// If we are in the range for a level one charge Animation
+		if (currentCharge >= levelOneMinCharge && currentCharge < levelTwoMinCharge)
+		{
+			anim.SetBool("LevelOne", true);
+		} // if
+		else 
+		{
+			anim.SetBool("LevelOne", false);
+		} // else
+
+		// If we are in the range for a level two charge Animation
+		if (currentCharge >= levelTwoMinCharge && currentCharge < levelThreeMinCharge)
+		{
+			anim.SetBool("LevelTwo", true);
+		} // if
+		else 
+		{
+			anim.SetBool("LevelTwo", false);
+		} // else
+
+		// If we are in the range for a level three charge Animation
+		if (currentCharge >= levelThreeMinCharge && currentCharge < levelFourMinCharge)
+		{
+			anim.SetBool("LevelThree", true);
+		} // if
+		else 
+		{
+			anim.SetBool("LevelThree", false);
+		} // else
+
+		// If we are in the range for a level four charge Animation
+		if (currentCharge >= levelFourMinCharge && currentCharge < maxCharge)
+		{
+			anim.SetBool("LevelFour", true);
+		} // if
+		else 
+		{
+			anim.SetBool("LevelFour", false);
+		} // else
+
+	} // private void ManageAnimations()
 } // public class TeslaCoil : MonoBehaviour 
