@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 	public SpriteRenderer pressa;
 	public GameObject mazeSpawnPoint;
 
-	[HideInInspector]
+	//[HideInInspector]
 	public InteractObject interactObject;
 	private Rigidbody2D rb;
 	private Animator anim;
