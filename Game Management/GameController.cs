@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
 
 	Instance Variables
 		public float maxCharge;
-			If the 
+			If this is reached by any Tesla Coil, they explode.
 	*/
 
 	[Header("Gameplay Variables")]
@@ -23,29 +23,49 @@ public class GameController : MonoBehaviour
 	public TeslaCoil playerTwoCoil;
 
 	//Private Instance Variables
-	// Gameplay
 	private bool isGameFinished = false;
 
 	// Use this for initialization
-	void Start () {
-		
-	}
+	void Start () 
+	{
+		// Set up each of the Tesla Coils
+		playerOneCoil.SetUpCoil(maxCharge, this);
+		playerTwoCoil.SetUpCoil(maxCharge, this);
+	} // void Start () 
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
+
 	} // Update();
 
 	// A Coil calls this once it's overloaded (dead)
-	public void CoilOverCharged ()
+	public void CoilOverCharged (TeslaCoil coilThatDied)
 	{
 		if (isGameFinished == false)
 		{
+			int numberOfPlayerThatDied;
+
+			// First stop the game.
 			isGameFinished = true;
+
+			//Find out which coil died.
+			if (Object.ReferenceEquals(coilThatDied, playerOneCoil))
+			{
+				numberOfPlayerThatDied = 1;
+			}  // if
+			else 
+			{
+				numberOfPlayerThatDied = 2;
+			} // else
+
+			// Do things saying that the game is over!
+			Debug.Log("[GameController] CoilOverCharged(): Coil of player " + numberOfPlayerThatDied + " has died! Game Over!");
 		} // if
 	}// public void CoilOverCharged ()
 
-	public bool IsGameFinished()
+	public bool IsGameFinished
 	{
 		get
 		{

@@ -13,7 +13,7 @@ public class TeslaCoil : MonoBehaviour
 	*/
 
 	[Header("Game Instance Variables")]
-	public float 	currentCharge;
+	public float currentCharge;
 	[Header("Animation Parameters")]
 	public float levelOneMinCharge;
 	public float levelTwoMinCharge;
@@ -21,9 +21,12 @@ public class TeslaCoil : MonoBehaviour
 	public float levelFourMinCharge;
 
 	// Private Instance Variables
-	private bool isDead			= false;
-	private bool coilHasStarted = false;
-
+	private bool 	isDead			= false;
+	private bool 	coilHasStarted = false;
+	private float 	maxCharge; // Set by GameController in SetUpCoil()
+	
+	private GameController gameController; // A reference to the GameController.
+	
 	void Update ()
 	{
 		if (coilHasStarted && !isDead)
@@ -32,13 +35,28 @@ public class TeslaCoil : MonoBehaviour
 		} // if
 	} // void Update ()
 
-	public void StartCoil()
+	public void SetUpCoil(float maxChargeInput, GameController gameControllerInput)
 	{
+		maxCharge 		= maxChargeInput;
+		gameController 	= gameControllerInput;
 
+		coilHasStarted 	= true;
 	} // public void StartCoil()
+
+	public void AddCharge (float amount)
+	{
+		currentCharge = currentCharge + amount;
+	} // public void AddCharge (float amount)
 
 	private void CheckIfDead()
 	{
-		
+		if (currentCharge >= maxCharge)
+		{
+			// Tell the game this coil is dead.
+			gameController.CoilOverCharged(this);
+
+			// Tell this coil that it is dead.
+			isDead = true;
+		} // if
 	} // private void CheckIfDead()
 } // public class TeslaCoil : MonoBehaviour 
