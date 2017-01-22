@@ -24,6 +24,9 @@ public class GameController : MonoBehaviour
 	public TeslaCoil playerTwoCoil;
 	[Header("Music")]
 	public AudioClip backgroundMusic;
+	public AudioClip gameOverMusic;
+	[Header("Game Over")]
+	public GameObject gameOverScreen;
 
 	//Private Instance Variables
 	private bool isGameFinished = false;
@@ -71,14 +74,31 @@ public class GameController : MonoBehaviour
 
 			// Do things saying that the game is over!
 			Debug.Log("[GameController] CoilOverCharged(): Coil of player " + numberOfPlayerThatDied + " has died! Game Over!");
+			
 		} // if
 	}// public void CoilOverCharged ()
 
 	private void ManageMusic()
 	{
 		// Do background music if the game is running.
-		
+		if (isGameFinished == false)
+		{	
+			// If the background music isn't already playing, set it in.
+			if (audio.clip != backgroundMusic)
+			{
+				SetAudioTrackAndPlay(audio, backgroundMusic);
+			} // if
+		} // if
+
+		// If the game is finished, play the end music.
 	} // private void ManageMusic()
+
+	private void SetAudioTrackAndPlay(AudioSource audioSource, AudioClip clipInput)
+	{
+		audioSource.Stop();
+		audioSource.clip = clipInput;
+		audioSource.Play();
+	} // private void SetAudioTrackAndPlay(AudioSource audioSource, AudioClip clip)
 
 	public bool IsGameFinished
 	{

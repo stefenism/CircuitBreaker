@@ -30,7 +30,7 @@ public class TeslaCoil : MonoBehaviour
 	private Animator		anim;
 	private GameController 	gameController; // A reference to the GameController.
 	
-	void Start ()
+	void Awake ()
 	{
 		anim = GetComponent<Animator>();
 	} // void Start ()
@@ -74,44 +74,27 @@ public class TeslaCoil : MonoBehaviour
 	private void ManageAnimations()
 	{
 		// If we are in the range for a level one charge Animation
-		if (currentCharge >= levelOneMinCharge && currentCharge < levelTwoMinCharge)
+		if (currentCharge >= levelOneMinCharge /* && currentCharge < levelTwoMinCharge*/)
 		{
 			anim.SetBool("LevelOne", true);
 		} // if
-		else 
-		{
-			anim.SetBool("LevelOne", false);
-		} // else
 
 		// If we are in the range for a level two charge Animation
-		if (currentCharge >= levelTwoMinCharge && currentCharge < levelThreeMinCharge)
+		if (currentCharge >= levelTwoMinCharge/* && currentCharge < levelThreeMinCharge*/)
 		{
 			anim.SetBool("LevelTwo", true);
 		} // if
-		else 
-		{
-			anim.SetBool("LevelTwo", false);
-		} // else
 
 		// If we are in the range for a level three charge Animation
-		if (currentCharge >= levelThreeMinCharge && currentCharge < levelFourMinCharge)
+		if (currentCharge >= levelThreeMinCharge/* && currentCharge < levelFourMinCharge*/)
 		{
 			anim.SetBool("LevelThree", true);
 		} // if
-		else 
-		{
-			anim.SetBool("LevelThree", false);
-		} // else
 
 		// If we are in the range for a level four charge Animation
-		if (currentCharge >= levelFourMinCharge && currentCharge < maxCharge)
+		if (currentCharge >= levelFourMinCharge/* && currentCharge < maxCharge*/)
 		{
 			anim.SetBool("LevelFour", true);
 		} // if
-		else 
-		{
-			anim.SetBool("LevelFour", false);
-		} // else
-
 	} // private void ManageAnimations()
 } // public class TeslaCoil : MonoBehaviour 
