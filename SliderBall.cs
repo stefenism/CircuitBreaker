@@ -6,7 +6,7 @@ public class SliderBall : MonoBehaviour {
 
 	public bool collided;
 	public Rigidbody2D rb;
-	public float speed;
+	public float speed = 1;
 	public bool go;
 	// Use this for initialization
 	void Start () {
@@ -24,6 +24,11 @@ public class SliderBall : MonoBehaviour {
 	void MoveBalls()
 	{
 		rb.velocity = new Vector2(0f, speed);
+
+		if(Mathf.Abs(rb.velocity.y) > speed)
+		{
+			rb.velocity = new Vector2(0f, speed);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D collision)
