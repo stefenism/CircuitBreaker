@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class GameController : MonoBehaviour 
+public class GameController : MonoBehaviour
 {
 	/*
 	21 Jan 2017
@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
 	private AudioSource audio;
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
 		// Set up each of the Tesla Coils
 		playerOneCoil.SetUpCoil(maxCharge, this);
@@ -41,10 +41,10 @@ public class GameController : MonoBehaviour
 
 		// Set up References
 		audio = GetComponent<AudioSource>();
-	} // void Start () 
-	
+	} // void Start ()
+
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 		ManageMusic();
 	} // Update();
@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour
 			{
 				numberOfPlayerThatDied = 1;
 			}  // if
-			else 
+			else
 			{
 				numberOfPlayerThatDied = 2;
 			} // else
@@ -77,7 +77,7 @@ public class GameController : MonoBehaviour
 	private void ManageMusic()
 	{
 		// Do background music if the game is running.
-		if ()
+		
 	} // private void ManageMusic()
 
 	public bool IsGameFinished
@@ -85,6 +85,6 @@ public class GameController : MonoBehaviour
 		get
 		{
 			return isGameFinished;
-		} // 
+		} //
 	} // public bool IsGameFinished()
-} // public class GameController : MonoBehaviour 
+} // public class GameController : MonoBehaviour
