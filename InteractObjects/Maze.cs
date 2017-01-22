@@ -54,7 +54,11 @@ public class Maze : InteractObject
 	// Required by InteractObject
 	override public void Failed()
 	{
-
+		Destroy(clone);
+		Destroy(runner);
+		this.gameObject.tag = "mash";
+		player.canControl = true;
+		player.smashing = false;
 	} // public void Failed()
 
 	override public void RunInteraction()
@@ -64,6 +68,14 @@ public class Maze : InteractObject
 		this.gameObject.tag = "Untagged";
 		StartMaze();
 	} // public void RunInteraction()
+
+	void Update()
+	{
+		if(Input.GetButtonDown("Player" + player.playerNumber+ "Cancel") || Input.GetButton("Player" + player.playerNumber + "Cancel2"))
+		{
+			Failed();
+		}
+	}
 
 	private void StartMaze()
 	{

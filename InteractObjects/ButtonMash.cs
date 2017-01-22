@@ -48,7 +48,10 @@ public class ButtonMash : InteractObject
 	// Required by InteractObject
 	override public void Failed()
 	{
-
+		enabled = false;
+		player.canControl = true;
+		player.smashing = false;
+		Destroy(this.gameObject);
 	} // public void Failed()
 
 	override public void RunInteraction()
@@ -81,6 +84,11 @@ public class ButtonMash : InteractObject
 			mashValue += .1f;
 
 		} // if
+
+		if(Input.GetButtonDown("Player" + player.playerNumber+ "Cancel") || Input.GetButton("Player" + player.playerNumber + "Cancel2"))
+		{
+			Failed();
+		}
 		fillBar.transform.localScale = new Vector3(1f, mashValue, 1f);
 	} // StartMash
 
