@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: be93d22972e3e45fea8bfdff218d57d1
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Gurmukhi
+  fontNames:
+  - Noto Sans Gurmukhi
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5224d6279bf894f32a53c63a478509a9
+timeCreated: 1485065651
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kankin
+  fontNames:
+  - Kankin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4355dd0dd10ad406490458a7bb70c262, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

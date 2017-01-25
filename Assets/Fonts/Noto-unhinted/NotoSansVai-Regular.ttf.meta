@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: eb7413613f0884b9b8e14a4d94e170ac
+timeCreated: 1485065660
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Vai
+  fontNames:
+  - Noto Sans Vai
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

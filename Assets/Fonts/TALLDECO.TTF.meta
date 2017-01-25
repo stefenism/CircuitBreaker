@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d1173f4d5e28c4920bb0363dc1130ff6
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TallDeco
+  fontNames:
+  - TallDeco
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

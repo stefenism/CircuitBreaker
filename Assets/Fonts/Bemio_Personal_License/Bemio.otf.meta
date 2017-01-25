@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f32c7a2eecac647ddbff69a1314ddb6c
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bemio
+  fontNames:
+  - Bemio
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

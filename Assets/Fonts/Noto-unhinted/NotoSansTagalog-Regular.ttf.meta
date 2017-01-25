@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: aefd4821d915e499891e2746e6dbda6a
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Tagalog
+  fontNames:
+  - Noto Sans Tagalog
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

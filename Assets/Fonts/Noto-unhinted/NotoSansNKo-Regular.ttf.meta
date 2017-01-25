@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 404929b433a484baf9ca3d801810c649
+timeCreated: 1485065649
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans NKo
+  fontNames:
+  - Noto Sans NKo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

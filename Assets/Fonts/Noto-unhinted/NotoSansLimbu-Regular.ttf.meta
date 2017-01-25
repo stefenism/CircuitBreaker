@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e32954c6c9b32405fb2ad5ef2497c923
+timeCreated: 1485065659
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Limbu
+  fontNames:
+  - Noto Sans Limbu
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

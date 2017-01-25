@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fa5fda63170cd4800849b411cf0e260d
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tommaso
+  fontNames:
+  - Tommaso
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8e61f360d40de4484b213e0f68f87a35, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

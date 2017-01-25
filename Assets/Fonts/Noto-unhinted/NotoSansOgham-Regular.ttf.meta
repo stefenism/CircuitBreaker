@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 06b2523232aea452da7aeef86e47fd89
+timeCreated: 1485065647
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Ogham
+  fontNames:
+  - Noto Sans Ogham
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

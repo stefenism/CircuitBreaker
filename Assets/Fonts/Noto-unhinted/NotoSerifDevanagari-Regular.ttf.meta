@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8a541b639af1e47abb0e9f9b5ed2096a
+timeCreated: 1485065655
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Devanagari
+  fontNames:
+  - Noto Serif Devanagari
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7fa6a19ec94144f038bbe5c6da0ea835, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

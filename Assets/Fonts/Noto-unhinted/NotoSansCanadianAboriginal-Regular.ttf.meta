@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: aa4425f0cee9b4fe4b0764b694a2bdc9
+timeCreated: 1485065656
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Canadian Aboriginal
+  fontNames:
+  - Noto Sans Canadian Aboriginal
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

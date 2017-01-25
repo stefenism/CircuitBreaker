@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2ba42eaba85ff427c8d6aad3bbf44272
+timeCreated: 1485065649
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Oriya UI
+  fontNames:
+  - Noto Sans Oriya UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 16892685c20df48058b5619efbcd50bb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

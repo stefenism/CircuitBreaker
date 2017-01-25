@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="11" tilewidth="50" tileheight="50" nextobjectid="12">
+ <tileset firstgid="1" name="BackGround" tilewidth="50" tileheight="50" tilecount="18" columns="6">
+  <image source="BackGround.png" width="300" height="150"/>
+ </tileset>
+ <tileset firstgid="19" name="ladder" tilewidth="50" tileheight="50" tilecount="10" columns="2">
+  <image source="ladder.png" width="100" height="250"/>
+ </tileset>
+ <tileset firstgid="29" name="BasicTiles" tilewidth="50" tileheight="50" tilecount="3" columns="3">
+  <image source="BasicTiles.png" width="150" height="50"/>
+ </tileset>
+ <tileset firstgid="32" name="Interactable" tilewidth="50" tileheight="50" tilecount="4" columns="2">
+  <image source="Interactable.png" width="100" height="100"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="10" height="11">
+  <data encoding="csv">
+1,2,3,4,3,4,5,6,0,0,
+7,8,9,10,9,10,11,12,0,0,
+13,14,15,16,15,16,17,18,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,1,2,3,4,5,6,0,0,
+0,0,7,8,9,10,11,12,0,0,
+0,0,13,14,15,16,17,18,0,0,
+0,0,0,0,0,0,0,0,0,0,
+1,2,3,4,3,4,3,4,5,6,
+7,8,9,10,9,10,9,10,11,12,
+13,14,15,16,15,16,15,16,17,18
+</data>
+ </layer>
+ <layer name="Tile Layer 2" width="10" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,19,20,0,0,
+0,0,0,0,0,0,21,22,0,0,
+0,0,0,0,0,0,23,24,0,0,
+0,0,0,0,0,0,25,26,0,0,
+0,0,0,0,19,20,27,28,0,0,
+0,0,0,0,21,22,0,0,0,0,
+0,0,0,0,23,24,0,0,0,0,
+0,0,0,0,25,26,0,0,0,0,
+0,0,0,0,27,28,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tile Layer 3" width="10" height="11">
+  <data encoding="csv">
+32,33,0,0,0,0,0,0,0,0,
+34,35,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,32,33,0,0,0,0,0,0,
+0,0,34,35,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+32,33,0,0,0,0,0,0,0,0,
+34,35,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="floors">
+  <object id="1" x="100" y="335" width="300" height="15"/>
+  <object id="2" x="-4.66667" y="535.333" width="503.333" height="15.3333"/>
+  <object id="9" x="-1" y="134.5" width="401" height="15.5"/>
+ </objectgroup>
+ <objectgroup name="ladders">
+  <object id="10" x="322" y="110" width="55" height="229"/>
+  <object id="11" x="222" y="308" width="54" height="231"/>
+ </objectgroup>
+</map>

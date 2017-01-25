@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ce45ab0e9c464436da3d283143316b0a
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Gujarati UI
+  fontNames:
+  - Noto Sans Gujarati UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b43915ce219da42a99066cb18c1b590b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

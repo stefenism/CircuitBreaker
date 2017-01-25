@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d72dbe70b12e441d9ad0e0a3e8b571e9
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Egyptian Hieroglyphs
+  fontNames:
+  - Noto Sans Egyptian Hieroglyphs
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

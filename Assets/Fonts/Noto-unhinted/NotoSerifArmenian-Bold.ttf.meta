@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 733ebdc3fd2f1412ab4ccb74232d8881
+timeCreated: 1485065654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Armenian
+  fontNames:
+  - Noto Serif Armenian
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 48bcf30a7b4914f068339238091106b2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6bd4ecca7869f4fc398a98b0e11cebb1
+timeCreated: 1485065653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Mongolian
+  fontNames:
+  - Noto Sans Mongolian
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

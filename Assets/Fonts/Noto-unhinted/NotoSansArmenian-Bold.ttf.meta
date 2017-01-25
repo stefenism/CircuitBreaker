@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cdffff2ff8bcc40cf972f662a5d8dc2f
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Armenian
+  fontNames:
+  - Noto Sans Armenian
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9b0859404cd9c4c628d99a6feb762fac, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

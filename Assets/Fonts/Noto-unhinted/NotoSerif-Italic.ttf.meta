@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: dee1a8a4d74134183844da15a57c2a87
+timeCreated: 1485065659
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif
+  fontNames:
+  - Noto Serif
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: aa4a73315029a4305a0a875da6251093, type: 3}
+  - {fileID: 12800000, guid: 2895fcece7a184cd494d21055b3ae719, type: 3}
+  - {fileID: 12800000, guid: 8b94243fc1dab452693f1adc93d3ca31, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

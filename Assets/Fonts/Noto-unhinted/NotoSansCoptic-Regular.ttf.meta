@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 86c40401b2435434e9b896fd70abd8c7
+timeCreated: 1485065654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Coptic
+  fontNames:
+  - Noto Sans Coptic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

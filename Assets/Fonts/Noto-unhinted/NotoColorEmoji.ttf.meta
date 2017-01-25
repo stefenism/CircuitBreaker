@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1ac653a4fe93a4534bb56413522758f4
+timeCreated: 1485065648
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Color Emoji
+  fontNames:
+  - Noto Color Emoji
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

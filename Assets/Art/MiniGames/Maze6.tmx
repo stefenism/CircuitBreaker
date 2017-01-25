@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="10" tilewidth="16" tileheight="16" nextobjectid="17">
+ <tileset firstgid="1" name="Maze" tilewidth="16" tileheight="16" tilecount="3" columns="0">
+  <tile id="0">
+   <image width="16" height="16" source="MazeBall.png"/>
+  </tile>
+  <tile id="1">
+   <image width="16" height="16" source="MazeGround.png"/>
+  </tile>
+  <tile id="2">
+   <image width="16" height="16" source="mazeWall.png"/>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="16" height="10">
+  <data encoding="csv">
+3,3,3,3,3,3,3,3,3,3,3,2,3,3,3,3,
+3,2,2,2,2,2,2,2,2,3,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,
+3,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,3,
+3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,
+3,2,3,2,2,2,2,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,
+3,2,2,2,2,3,2,2,2,2,2,2,2,2,2,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+</data>
+ </layer>
+ <layer name="Tile Layer 2" width="16" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,3,2,2,0,0,0,0,0,
+0,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,3,0,0,0,0,0,0,0,0,2,0,
+0,0,0,0,0,0,0,0,0,3,0,0,0,0,3,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" x="0" y="0" width="175" height="16"/>
+  <object id="2" x="0" y="16" width="16" height="144"/>
+  <object id="3" x="16" y="144" width="240" height="16"/>
+  <object id="4" x="240" y="0" width="16" height="144"/>
+  <object id="5" x="192" y="0" width="48" height="16"/>
+  <object id="6" x="129" y="16" width="14" height="15"/>
+  <object id="7" x="209" y="33" width="14" height="14"/>
+  <object id="8" x="193" y="65" width="14" height="14"/>
+  <object id="9" x="225" y="97" width="15" height="14"/>
+  <object id="10" x="97" y="33" width="14" height="14"/>
+  <object id="11" x="145" y="97" width="14" height="14"/>
+  <object id="12" x="113" y="113" width="14" height="14"/>
+  <object id="13" x="81" y="129" width="14" height="15"/>
+  <object id="14" x="81" y="81" width="14" height="14"/>
+  <object id="15" x="49" y="49" width="14" height="14"/>
+  <object id="16" x="33" y="97" width="14" height="14"/>
+ </objectgroup>
+</map>

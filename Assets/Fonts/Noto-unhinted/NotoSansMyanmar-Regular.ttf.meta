@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c7635595c82c84d4baa9aeb103035576
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Myanmar
+  fontNames:
+  - Noto Sans Myanmar
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a1b83bcc9cdc84b699020d242247cdc4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

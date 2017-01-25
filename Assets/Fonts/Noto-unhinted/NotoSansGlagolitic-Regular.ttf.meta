@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 22fac4e508ec6417aaa0ba0c0f35bbeb
+timeCreated: 1485065648
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Glagolitic
+  fontNames:
+  - Noto Sans Glagolitic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

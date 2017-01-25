@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: aa0613939cacd4d04aef6e28be3d7d21
+timeCreated: 1485065656
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Syloti Nagri
+  fontNames:
+  - Noto Sans Syloti Nagri
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

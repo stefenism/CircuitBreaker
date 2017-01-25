@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7292bea4cb2384bdd9b51b0f19520394
+timeCreated: 1485065653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Thai
+  fontNames:
+  - Noto Serif Thai
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4af741b31826f4e62abf984dd1ace071, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ec1fbdf96ea0f480fac9fb10c7854166
+timeCreated: 1485065660
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Lao UI
+  fontNames:
+  - Noto Sans Lao UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d82efacdb9545482bac7d25f6ab81215, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

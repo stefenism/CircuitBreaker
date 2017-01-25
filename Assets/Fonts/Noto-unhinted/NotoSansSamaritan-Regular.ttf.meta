@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f45e7fd3fd8fb40e9bd6daab565ab5fa
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Samaritan
+  fontNames:
+  - Noto Sans Samaritan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

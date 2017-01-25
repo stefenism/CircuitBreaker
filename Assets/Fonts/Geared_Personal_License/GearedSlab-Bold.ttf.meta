@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c887d57574e53488eb79254282e6f4e1
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Geared Slab
+  fontNames:
+  - Geared Slab
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8f48768263082480099b6ce0544e1a03, type: 3}
+  - {fileID: 12800000, guid: 41b69805496d346e1a2a3a53edff0531, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

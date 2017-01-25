@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1c704aa42f4d5402e9b9cb7290699b7e
+timeCreated: 1483557723
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Technicality
+  fontNames:
+  - Technicality
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 95106ea89168141898e6755597f253a4
+timeCreated: 1485065655
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Telugu
+  fontNames:
+  - Noto Serif Telugu
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

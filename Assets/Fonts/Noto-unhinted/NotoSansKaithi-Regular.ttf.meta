@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f850e44dbe73d419cbca3052a942003a
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Kaithi
+  fontNames:
+  - Noto Sans Kaithi
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

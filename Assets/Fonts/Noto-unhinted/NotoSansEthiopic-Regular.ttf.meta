@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a2104f95ad65a40c495b0cd0f308e0ad
+timeCreated: 1485065656
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Ethiopic
+  fontNames:
+  - Noto Sans Ethiopic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 28106aaa637d24aff8495b45c024a4a4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

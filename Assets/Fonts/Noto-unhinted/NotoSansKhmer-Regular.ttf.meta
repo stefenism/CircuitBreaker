@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 66b3ec0dc817d4e21a908e74afc78934
+timeCreated: 1485065652
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Khmer
+  fontNames:
+  - Noto Sans Khmer
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 02d6c1b5fb87f4ba0bfb6ca4eb38ad0e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 9cc8c2242b27f4678ab2b30526f89827
+timeCreated: 1485065655
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Phags Pa
+  fontNames:
+  - Noto Sans Phags Pa
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

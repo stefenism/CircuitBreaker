@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 808b2c2725d1d496ea830a5278aa40a1
+timeCreated: 1485065654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Digiffiti
+  fontNames:
+  - Digiffiti
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

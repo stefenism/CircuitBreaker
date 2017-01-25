@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e068e933ac3bf49d781fa0a965a67f89
+timeCreated: 1485065659
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Malayalam
+  fontNames:
+  - Noto Serif Malayalam
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1d767cce1499a45f1bffadf2b01f00ef, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fb3eb94b8bf324390af3a86195bcb65d
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Georgian
+  fontNames:
+  - Noto Sans Georgian
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5b346766b3a4b4100a60a9198ae61f86, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

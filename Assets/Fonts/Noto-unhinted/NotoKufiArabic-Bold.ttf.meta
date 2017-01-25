@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 83297b1b364524917ac3493ffebbcbf2
+timeCreated: 1485065654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Kufi Arabic
+  fontNames:
+  - Noto Kufi Arabic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5044d2b59bca24927a8feeda9115460d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

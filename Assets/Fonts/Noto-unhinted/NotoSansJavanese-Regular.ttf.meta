@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: dcfe7ee7182c243eb8724e2630c2c75e
+timeCreated: 1485065659
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Javanese
+  fontNames:
+  - Noto Sans Javanese
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

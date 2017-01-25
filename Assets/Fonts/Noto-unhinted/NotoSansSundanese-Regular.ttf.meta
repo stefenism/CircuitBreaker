@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5013edc0d022f403bae3b36635ecb2a5
+timeCreated: 1485065651
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Sundanese
+  fontNames:
+  - Noto Sans Sundanese
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

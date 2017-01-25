@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: be720ffce9c634c869a3648c37f5dbc8
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Ol Chiki
+  fontNames:
+  - Noto Sans Ol Chiki
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

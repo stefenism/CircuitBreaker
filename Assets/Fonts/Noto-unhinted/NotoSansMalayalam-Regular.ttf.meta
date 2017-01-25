@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f95596b2afafd4e408da755aa2161d77
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Malayalam
+  fontNames:
+  - Noto Sans Malayalam
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e51e51ebec41c4a518723a958c163b8e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

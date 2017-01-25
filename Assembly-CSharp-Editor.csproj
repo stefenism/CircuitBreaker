@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D33F9625-2921-FAEA-B751-B7E1D2C42FC8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/opt/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/opt/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\CustomTiledImporterAttribute.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ICustomTiledImporter.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Material.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Mesh.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Prefab.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Texture.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Xml.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportUtils.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\SortingLayerExposedEditor.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\Tiled2UnityMenuItems.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\TiledAssetPostProcessor.cs" />
+     <None Include="Assets\Fonts\00_starmap\00.txt" />
+     <None Include="Assets\Fonts\lady_radical\License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab3b.tiled2unity.xml" />
+     <None Include="Assets\Fonts\v5xtender\xtender.txt" />
+     <None Include="Assets\Fonts\codeman38_press-start-2p\LICENSE.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab7d.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6b.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6c.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2c.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab7a.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6g.tiled2unity.xml" />
+     <None Include="Assets\Fonts\dpcomic\license.txt" />
+     <None Include="Assets\Fonts\cumberland-fontworks_merchant-copy\Merchant-Copy-ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1b.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2d.tiled2unity.xml" />
+     <None Include="Assets\Fonts\tup-wanders_forque\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
+     <None Include="Assets\Fonts\silkscreen\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
+     <None Include="Assets\Fonts\8bitlimit\8bitlimit.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6h.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab4a.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1a.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1d.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab7b.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze1.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
+     <None Include="Assets\Fonts\style-7_thin-pixel-7\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2b.tiled2unity.xml" />
+     <None Include="Assets\Fonts\wide_pixel_7\readme.txt" />
+     <None Include="Assets\Fonts\computer_pixel_7\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1e.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab5d.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6e.tiled2unity.xml" />
+     <None Include="Assets\Fonts\pixel_lcd7\readme.txt" />
+     <None Include="Assets\Fonts\00_starmap\01.txt" />
+     <None Include="Assets\Fonts\press-start\license.txt" />
+     <None Include="Assets\Fonts\nymphont_champagne-and-limousines\Font-license-readme.txt" />
+     <None Include="Assets\Fonts\pixelmix\readme.txt" />
+     <None Include="Assets\Fonts\freaky-fonts_gamegirl-classic\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2f.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze8.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1c.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab4c.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze3.tiled2unity.xml" />
+     <None Include="Assets\Fonts\SmartPlus\glyphs.txt" />
+     <None Include="Assets\Fonts\nymphont_lemondrop\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab5c.tiled2unity.xml" />
+     <None Include="Assets\Fonts\opipik_sanstaina\read me.txt" />
+     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6a.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze6.tiled2unity.xml" />
+     <None Include="Assets\Fonts\codeman38_press-start-2p\FONTLOG.txt" />
+     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2h.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze7.tiled2unity.xml" />
+     <None Include="Assets\Fonts\visitor\visitor.txt" />
+     <None Include="Assets\Fonts\pix-pixelfjverdana12pt\1001fonts-pix-pixelfjverdana12pt-eula.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1f.tiled2unity.xml" />
+     <None Include="Assets\Fonts\bit_out\readme.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze2.tiled2unity.xml" />
+     <None Include="Assets\Fonts\pixelmix\license.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\MazeTest.tiled2unity.xml" />
+     <None Include="Assets\Fonts\sorkin-type_limelight\LimeLight SIL OFL Font License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab7c.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2e.tiled2unity.xml" />
+     <None Include="Assets\Fonts\v5prophit_cell\other_prophits.txt" />
+     <None Include="Assets\Fonts\denis-masharov_poiret-one\OFL.txt" />
+     <None Include="Assets\Fonts\disposabledroid-bb\fontinfo.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab3a.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze5.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab5a.tiled2unity.xml" />
+     <None Include="Assets\Fonts\opipik_sanstaina\license.txt" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Maze4.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab4d.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab4b.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6f.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab5b.tiled2unity.xml" />
+     <None Include="Assets\Fonts\pixel_noir\readme-pixelnoir.txt" />
+     <None Include="Assets\Fonts\Noto-unhinted\LICENSE_OFL.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1h.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab1g.tiled2unity.xml" />
+     <None Include="Assets\Fonts\arcadeclassic\pizzadudedotdk.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+     <None Include="Assets\Fonts\vermin_vibes_1989\license.txt" />
+     <None Include="Assets\Fonts\retro_computer\License - READ THIS.txt" />
+     <None Include="Assets\Fonts\vermin_vibes_1989\read me.txt" />
+     <None Include="Assets\Fonts\perfect_dos_vga_437\dos437.txt" />
+     <None Include="Assets\Fonts\back-to-1982\pizzadudedotdk.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2a.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab2g.tiled2unity.xml" />
+     <None Include="Assets\Fonts\ironick-normal\1001fonts-ironick-normal-eula.txt" />
+     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Lab6d.tiled2unity.xml" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PlaymodeTestsRunner">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/opt/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Tizen.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/TizenPlayer/UnityEditor.Tizen.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SamsungTV.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{EFAB2A98-DAC3-281C-AD19-82A268163E29}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

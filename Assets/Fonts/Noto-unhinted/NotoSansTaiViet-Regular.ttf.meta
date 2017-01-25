@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4b587848be75340fb9e2da12f1728437
+timeCreated: 1485065651
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Tai Viet
+  fontNames:
+  - Noto Sans Tai Viet
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

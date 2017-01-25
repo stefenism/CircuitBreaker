@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e6eb749022d8a4a828a7092a249bc1fc
+timeCreated: 1485065660
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Old Turkic
+  fontNames:
+  - Noto Sans Old Turkic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d303481ac03b2477cb407764f529806e
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Naskh Arabic
+  fontNames:
+  - Noto Naskh Arabic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5ebbc1ad9728e4eda8c212aa4cc6f0f8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

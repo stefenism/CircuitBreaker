@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 318264b623bd44cc4a691a3f10e8dc45
+timeCreated: 1485065649
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Tamil
+  fontNames:
+  - Noto Serif Tamil
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

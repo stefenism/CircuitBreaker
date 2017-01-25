@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b9ce264c6367b44e2bdc1693c18313e1
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Khmer
+  fontNames:
+  - Noto Serif Khmer
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

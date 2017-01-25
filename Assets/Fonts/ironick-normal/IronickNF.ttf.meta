@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f20ad78dcd2614936a72c6021993d352
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ironick NF
+  fontNames:
+  - Ironick NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c2c93862eb7b145cf9bb96f25b1f3906, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

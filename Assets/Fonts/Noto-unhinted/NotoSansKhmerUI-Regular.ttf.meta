@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: dd4450dac2f6a4d47bdb90723b65b850
+timeCreated: 1485065659
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Khmer UI
+  fontNames:
+  - Noto Sans Khmer UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 031c434d96876440fa7cce01f8985107, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5499affe94a864857aae6dbeff147627
+timeCreated: 1485065652
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Bengali
+  fontNames:
+  - Noto Sans Bengali
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2b277415bb6ef4489ac030ec06b9bfe2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

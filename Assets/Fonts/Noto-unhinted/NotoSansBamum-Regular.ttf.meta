@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5797c1aac20fd4f03a2a18e3e67aa9a8
+timeCreated: 1485065652
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Bamum
+  fontNames:
+  - Noto Sans Bamum
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

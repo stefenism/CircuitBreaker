@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: aec93992574dd41b6a5d13ad98d8d756
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Lao
+  fontNames:
+  - Noto Serif Lao
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 50e497cf8072b4e5289da3dd7f184793, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

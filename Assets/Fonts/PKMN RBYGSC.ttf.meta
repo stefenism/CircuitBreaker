@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b0cf2a471f07946f8bb18b49c9c451ac
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PKMN RBYGSC
+  fontNames:
+  - PKMN RBYGSC
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

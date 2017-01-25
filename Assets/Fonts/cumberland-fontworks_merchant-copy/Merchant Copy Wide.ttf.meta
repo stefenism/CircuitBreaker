@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ec47d48d769774b0381d9c549660df99
+timeCreated: 1483557723
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Merchant Copy Wide
+  fontNames:
+  - Merchant Copy Wide
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 978ac3a539b7548faa4779250f16a8a5
+timeCreated: 1485065655
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Bengali
+  fontNames:
+  - Noto Serif Bengali
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5a8208db757b54b7e853a1b15212d79a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

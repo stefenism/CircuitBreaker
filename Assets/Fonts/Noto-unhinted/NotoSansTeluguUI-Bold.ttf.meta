@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d665d643299be49a692d8f08feadb83d
+timeCreated: 1485065658
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Telugu UI
+  fontNames:
+  - Noto Sans Telugu UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 02e23070bdaf947f9ab2f29dd91c72d9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

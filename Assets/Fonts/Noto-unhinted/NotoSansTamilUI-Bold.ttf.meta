@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9fb90da1c2df54e5d9fd9f128d5022d9
+timeCreated: 1485065655
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Tamil UI
+  fontNames:
+  - Noto Sans Tamil UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 89567c47037624b18a5e6716c82bc450, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

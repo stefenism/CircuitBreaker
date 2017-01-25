@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ee90d5763ba1f4325862016847fac2be
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Sinhala
+  fontNames:
+  - Noto Sans Sinhala
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 674ba4937bebc4208a2c3831140d70eb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

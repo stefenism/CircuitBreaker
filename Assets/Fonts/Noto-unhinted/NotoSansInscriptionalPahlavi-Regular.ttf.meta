@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 00763742f644649f49cd713976550f1b
+timeCreated: 1485065646
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Inscriptional Pahlavi
+  fontNames:
+  - Noto Sans Inscriptional Pahlavi
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

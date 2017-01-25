@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e60a2c35669d14488b45046a366f09ed
+timeCreated: 1485065660
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Kannada
+  fontNames:
+  - Noto Sans Kannada
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a94e81a4a25194c8ab77562916f5e6b8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

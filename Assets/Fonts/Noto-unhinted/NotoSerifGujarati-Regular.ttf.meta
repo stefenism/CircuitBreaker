@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1f4df3722dee14d9a9b78f3f41146bae
+timeCreated: 1485065648
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Gujarati
+  fontNames:
+  - Noto Serif Gujarati
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 030c60a39bfcf4149825bdeebc823dd9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

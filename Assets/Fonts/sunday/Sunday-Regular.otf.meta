@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bdd316620865f4796b24bd8d3136dc00
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sunday
+  fontNames:
+  - Sunday
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b5c477693335a45d58da1e684111908c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

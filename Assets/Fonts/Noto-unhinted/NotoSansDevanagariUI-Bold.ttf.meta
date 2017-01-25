@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f0f9a682bdf4a4e1fb8098dc1978968f
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Devanagari UI
+  fontNames:
+  - Noto Sans Devanagari UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 037c19d5d93bb4b859a44ab145f86595, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

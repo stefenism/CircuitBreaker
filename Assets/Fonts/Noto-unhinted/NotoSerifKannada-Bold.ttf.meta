@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fd3ae4cd5c9624a6a88b59405ab79c83
+timeCreated: 1485065661
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif Kannada
+  fontNames:
+  - Noto Serif Kannada
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a00568429e031411288a42b37761374f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

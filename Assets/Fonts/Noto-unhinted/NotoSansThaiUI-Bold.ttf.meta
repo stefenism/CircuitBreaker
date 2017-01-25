@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 317d0ce86268249a9ba47a91ba432764
+timeCreated: 1485065649
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Thai UI
+  fontNames:
+  - Noto Sans Thai UI
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

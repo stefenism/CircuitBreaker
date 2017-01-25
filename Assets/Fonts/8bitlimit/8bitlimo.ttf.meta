@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d16c4d61388814ea9a22fcd4a18db4dd
+timeCreated: 1483557723
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 8-bit Limit O (BRK)
+  fontNames:
+  - 8-bit Limit O (BRK)
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

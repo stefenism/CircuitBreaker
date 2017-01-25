@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4bc35cf72918943b7a2d2a9b920d94fd
+timeCreated: 1485065651
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Syriac Estrangela
+  fontNames:
+  - Noto Sans Syriac Estrangela
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

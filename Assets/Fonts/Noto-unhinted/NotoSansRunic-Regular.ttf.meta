@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2c499a901ce8747589721cbc6e2e681a
+timeCreated: 1485065649
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Runic
+  fontNames:
+  - Noto Sans Runic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

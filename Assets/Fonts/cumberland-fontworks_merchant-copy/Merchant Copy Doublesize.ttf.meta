@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6fe512dcd910f4589a27888de69e1aa0
+timeCreated: 1483557723
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Merchant Copy Doublesize
+  fontNames:
+  - Merchant Copy Doublesize
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

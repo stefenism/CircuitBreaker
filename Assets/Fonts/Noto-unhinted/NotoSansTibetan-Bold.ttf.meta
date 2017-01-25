@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: be6585e1b32c842f1b474c1642d33cf1
+timeCreated: 1485065657
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Tibetan
+  fontNames:
+  - Noto Sans Tibetan
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 10d29e6d61e4d4febad294d768f49c07, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
