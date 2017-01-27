@@ -158,6 +158,9 @@
      <None Include="Assets\Fonts\ironick-normal\1001fonts-ironick-normal-eula.txt" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\Lab6d.tiled2unity.xml" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -199,6 +202,9 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.VR">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>

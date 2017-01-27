@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Title Screen.unity
+=======
+- path: Assets/Scenes/Mainold.unity
+>>>>>>> origin/master
   isLoaded: 1
   isActive: 1
